@@ -14,7 +14,6 @@ public class CreditCardPayment implements PaymentStrategy {
         this.expirationDate = expirationDate;
     }
 
-    @Override
     public void pay(double amount) {
         // Implementation of payment using a credit card
         System.out.println("Paid " + amount + " using Credit Card.");
@@ -29,7 +28,6 @@ public class PayPalPayment implements PaymentStrategy {
         this.password = password;
     }
 
-    @Override
     public void pay(double amount) {
         // Implementation of payment using PayPal
         System.out.println("Paid " + amount + " using PayPal.");
